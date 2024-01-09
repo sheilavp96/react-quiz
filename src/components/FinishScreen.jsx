@@ -16,7 +16,10 @@ export const FinishScreen = ({ points, maxPossiblePoints, highscore, dispatch })
         {maxPossiblePoints} ({Math.ceil(percentage)})%{" "}
       </p>
       <p className="highscore">(Highscore {highscore} points)</p>
-      <div className="btn btn-ui" onClick={() => dispatch({ type: "restart" })}>
+      <div
+        className="btn btn-ui btn-restart"
+        onClick={() => dispatch({ type: "restart" })}
+      >
         Restart quiz
       </div>
     </>

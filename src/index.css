@@ -291,4 +291,21 @@ progress {
   h2 {
     font-size: 1.6rem;
   }
+  .result {
+    font-size: 1.8rem;
+  }
+  .btn-restart {
+    float: none;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .result {
+    font-size: 1.6rem;
+  }
+  .main {
+    width: 100%;
+  }
 }
