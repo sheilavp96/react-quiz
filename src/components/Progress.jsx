@@ -1,0 +1,16 @@
+import React from "react";
+
+export const Progress = ({ index, numQuestions, points, maxPossiblePoints, answer }) => {
+  //si answer es null===0, si tiene valor es 1
+  return (
+    <header className="progress">
+      <progress max={numQuestions} value={index + Number(answer !== null)} />
+      <p>
+        Question <strong>{index + 1}</strong> / {numQuestions}
+      </p>
+      <p>
+        <strong>{points}</strong> / {maxPossiblePoints}
+      </p>
+    </header>
+  );
+};
